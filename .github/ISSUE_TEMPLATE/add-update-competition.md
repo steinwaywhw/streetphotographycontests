@@ -20,6 +20,17 @@ Please fill in the content below. An example is given at the end.
   }
 ```
 
+You can include some key information in the "tags" section. For instance, you can include the following info.
+
+* Is it free to enter? 
+* Is there a limit on how many images you can submit? 
+* Is there a limit on how recent the images are taken? 
+* What about limits on cameras used for taking the image? 
+* What's the prize? 
+
+For such informations, please include a reference to the official rules below:
+
+Official Rules for Tags:
 
 Example: 
 

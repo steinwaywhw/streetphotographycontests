@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Street Photography Competitions</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.2.0/build/global/luxon.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      th.is-clickable:hover {
+        background-color: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Street Photography Competitions</h1>
+
+          <div id="tags" class="field is-grouped"></div>
+          <div class="content">
+            <p>
+              This is a crowed-sourced, up-to-date list of competitions for
+              fellow street photographers. The data is maintained as a Github
+              repository. Your contribution will help keep the list up-to-date
+              for the street photography community. Feel free to leave a comment
+              using the links above. If the list helped you today, consider
+              <a
+                class="has-background-success-light"
+                href="https://www.buymeacoffee.com/steinwaywu"
+                >supporting me</a
+              >
+              :) You can also follow my street photography account at
+              <a
+                class="has-background-success-light"
+                href="https://linktr.ee/steinwaywu"
+                >Instagram</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <table id="contests" class="table is-hoverable is-fullwidth">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <p>
+            Additional non-street photography contests can be found
+            <a href="https://photocontestdeadlines.com/all-photo-competitions/"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

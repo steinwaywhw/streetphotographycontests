@@ -9,7 +9,7 @@ assignees: steinwaywhw
 
 Please fill in the content below. An example is given at the end. 
 
-```json
+```js
   {
     name: "",
     url: "https://",
@@ -23,7 +23,7 @@ Please fill in the content below. An example is given at the end.
 
 Example: 
 
-```json
+```js
   {
     name: "Sony Would Photography Awards > Open Competition > Street Photography",
     url: "https://www.worldphoto.org/sony-world-photography-awards",

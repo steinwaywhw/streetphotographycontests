@@ -7,6 +7,8 @@ assignees: steinwaywhw
 
 ---
 
+## Request
+
 Please fill in the content below. An example is given at the end. 
 
 ```js
@@ -28,11 +30,11 @@ You can include some key information in the "tags" section. For instance, you ca
 * What about limits on cameras used for taking the image? 
 * What's the prize? 
 
-For such informations, please include a reference to the official rules below:
+For such information, please include a reference to the official rules below:
 
 Official Rules for Tags:
 
-Example: 
+## Example
 
 ```js
   {

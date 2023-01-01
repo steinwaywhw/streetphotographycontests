@@ -16,13 +16,20 @@ function datetime(iso, zone) {
     : luxon.DateTime.fromISO(iso);
 }
 
-var contests = [
+var CONTESTS = [
   {
     name: "Sony Would Photography Awards > Open Competition > Street Photography",
     url: "https://www.worldphoto.org/sony-world-photography-awards",
     deadline: datetime("2023-01-06T13:00:00", "GMT"),
     status: "Open",
-    tags: ["free to enter"],
+    tags: [
+      "free to enter",
+      "any camera",
+      "free for 3 images",
+      "pay for more",
+      "images taken in 2022",
+      "$5000 award", "Sony equipment award", 
+    ],
     revision: datetime("2022-12-30", "EST"),
   },
   {
@@ -155,7 +162,16 @@ var contests = [
   },
 ];
 
-const headers = [
+CONTESTS.sort((a, b) => {
+  if (a.status == b.status) return a.deadline - b.deadline;
+
+  if (a.status == "Open") return -1;
+  if (b.status == "Open") return 1;
+
+  return a.status - b.status;
+});
+
+const HEADERS = [
   { name: "Name" },
   {
     name: "Submission Deadline",
@@ -203,14 +219,14 @@ function mkrow(datum) {
 
 d3.select("#contests tbody")
   .selectAll("tr")
-  .data(contests, (d) => d.name)
+  .data(CONTESTS, (d) => d.name)
   .enter()
   .append(mkrow);
 
 d3.select("#contests thead")
   .append("tr")
   .selectAll("th")
-  .data(headers)
+  .data(HEADERS)
   .enter()
   .append("th")
   .attr("class", (d) => (d.sortkey ? "is-clickable" : "")) // the class is used by CSS on hover

@@ -28,9 +28,10 @@ var CONTESTS = [
       "free for 3 images",
       "pay for more",
       "images taken in 2022",
-      "$5000 award", "Sony equipment award", 
+      "$5000 award",
+      "Sony equipment award",
     ],
-    revision: datetime("2022-12-30", "EST"),
+    revision: datetime("2023-01-04", "EST"),
   },
   {
     name: "Siena International Photo Awards > Street Photography",
@@ -250,7 +251,12 @@ d3.select("#contests thead")
 const tags = [
   {
     name: "Last Updated",
-    value: datetime("2022-12-30", "EST").toLocaleString(),
+    value: CONTESTS.map((item) => item.revision)
+      .reduce(
+        (max, item) => (item > max ? item : max),
+        datetime("1900-01-01", "EST")
+      )
+      .toLocaleString(),
   },
   {
     name: "Github",

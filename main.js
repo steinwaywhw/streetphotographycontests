@@ -21,7 +21,7 @@ var CONTESTS = [
     name: "Sony Would Photography Awards > Open Competition > Street Photography",
     url: "https://www.worldphoto.org/sony-world-photography-awards",
     deadline: datetime("2023-01-06T13:00:00", "GMT"),
-    status: "Open",
+    status: "Concluded",
     tags: [
       "free to enter",
       "any camera",
@@ -160,6 +160,14 @@ var CONTESTS = [
     status: "Open",
     tags: ["pay to enter"],
     revision: datetime("2022-12-30", "EST"),
+  },
+  {
+    name: "The Independent Photographer Award",
+    url: "https://independent-photo.com/competition/",
+    deadline: datetime("2022-09-30", "GMT"),
+    status: "Concluded",
+    tags: ["pay to enter", "monthly competition", "cash award"],
+    revision: datetime("2023-01-09", "EST"),
   },
 ];
 

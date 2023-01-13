@@ -37,9 +37,9 @@ var CONTESTS = [
     name: "Siena International Photo Awards > Street Photography",
     url: "https://sipacontest.com",
     deadline: datetime("2023-01-09", "GMT"),
-    status: "Open",
+    status: "Concluded",
     tags: ["free for 1 image", "pay for more images"],
-    revision: datetime("2022-12-30", "EST"),
+    revision: datetime("2023-01-12", "EST"),
   },
   {
     name: "Urban Photo Awards",

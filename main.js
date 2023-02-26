@@ -125,9 +125,9 @@ var CONTESTS = [
     name: "Leica Street Photo Awards",
     url: "https://leicastreetphoto.pl",
     deadline: datetime("2023-01-30T19:59", "CET"),
-    status: "Open",
+    status: "Concluded",
     tags: ["free to enter"],
-    revision: datetime("2022-12-30", "EST"),
+    revision: datetime("2023-02-26", "EST"),
   },
   {
     name: "Istanbul Street Photography Festival",
@@ -149,7 +149,7 @@ var CONTESTS = [
     name: "Fine Art Photography Awards > Street",
     url: "https://fineartphotoawards.com",
     deadline: datetime("2023-02-12", "GMT"),
-    status: "Open",
+    status: "Concluded",
     tags: ["pay to enter"],
     revision: datetime("2022-12-30", "EST"),
   },
@@ -217,7 +217,7 @@ function mkrow(datum) {
   tr.append("td").append("a").text(datum.name).attr("href", datum.url);
   tr.append("td").text(
     datum.deadline.toLocaleString
-      ? datum.deadline.toLocaleString(luxon.DateTime.DATETIME_FULL)
+      ? datum.deadline.toLocaleString()
       : datum.deadline
   );
   tr.append("td").text(datum.status);

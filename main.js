@@ -157,9 +157,9 @@ var CONTESTS = [
     name: "Monovisions Black & White Photography Awards > Street Photography",
     url: "https://monovisionsawards.com",
     deadline: datetime("2023-01-22", "GMT"),
-    status: "Open",
+    status: "Concluded",
     tags: ["pay to enter"],
-    revision: datetime("2022-12-30", "EST"),
+    revision: datetime("2023-02-26", "EST"),
   },
   {
     name: "The Independent Photographer Award",
